@@ -1,12 +1,21 @@
 
-import './App.css';
-const title = " Welcome Codix"
+
+import Navbar from './Navbar';
+import Home from './home';
+import './index.css';
+
+
+
 function App(){
   return (
     <div className ="App">
+      <Navbar   />
+      
       <div className="content">
-        <h1> App Component {title}</h1>
+      <Home />
       </div>
+     
+     
     </div>
 
   )
