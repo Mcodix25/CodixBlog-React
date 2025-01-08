@@ -33,3 +33,20 @@
   margin: 40px auto;
   padding: 20px;
 }
+.tryme {
+  color: #f1356d;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+
+}
+
+.blog-preview {
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid lightblue;
+}
+.blog-preview:hover{
+  box-shadow:  1px 3px 5px pink;
+}
+
