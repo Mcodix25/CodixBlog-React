@@ -1,4 +1,5 @@
 import { useState } from "react"
+import MainPage from "./MainPage";
 
 const PageNine=()=>{
 
@@ -18,6 +19,7 @@ const PageNine=()=>{
                 <p>
                   hello {girl} ; 
             </p>
+            
             <br/>
             
              

@@ -1,19 +1,24 @@
 //import { useState } from "react";
 
-const Bloglist = (props) => {
-    const blog= props.blogi;
+const Bloglist = ({blogi,title,hey,handleDelete}) => {
+   //const blog= props.blogi;
+   // const titled = props.title;
+  
     
     return ( 
         <div className='blog-list'>
-            <h1> BlogList</h1>
-        {blog.map((blogs)=>(
+            <h1> BlogList {title}</h1>
+            <p>{hey}</p>
+        {blogi.map((blogs)=>(
             <p>{blogs.title}
+               {blogs.body}
                {blogs.author}
-               {blogs.author}
+               <button onClick= {()=>handleDelete(blogs.id) }>Delete</button>
             </p>
+           
         ))}
         </div>
      );
 }
  
-export default Bloglist;
+export default Bloglist; 

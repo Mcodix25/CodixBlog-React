@@ -9,7 +9,8 @@ import PageFour from './PageFour';
 import Pagefive from './PageFive';
 import PageNine from './PageNine';
 import PageTen from './PageTen';
-import Bloglist from './Blog-list';
+//import Bloglist from './Blog-list';
+import MainPages from './MainPage';
 //import './index.css';
 
 function App(){
@@ -21,11 +22,13 @@ function App(){
       <Headline/>
       
       <div className="content">
+      
       <Home />
       <p>{title}</p>
       </div>
       <div>
-      <PageOne/>
+      
+      <PageOne/><br/>
       <PageTwo/>
        <div className="content">
         <PageThree/>
@@ -38,7 +41,8 @@ function App(){
         <br/>
         <PageTen/>
         <br/>
-        <Bloglist/>
+        <MainPages/>
+      
 
        </div>
 
