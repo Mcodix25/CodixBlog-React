@@ -1,46 +1,52 @@
-import { useState } from 'react';
-import './index.css';
+
 import SubMainPage from './SubMainPage';
+import DivisionTwo from './DivisionTwo';
+import DivisionThree from './DivisionThree';
+import DivisionFour from './DivisionFour';
+import DivisionFive from './DivisionFive';
+import Divisionsix from './Divisionsix';
+import DivisionSeven from './DivisionSeven';
+import DivisionEigth from './DivisionEight';
+import DivisionNine from './DivisionNine';
+
 const MainPages = ()=>{
-    const [myName,setMyname]=useState('YourName');
-
-    const [movie,setMovie]=useState([{title:'Starwars', director: "George lucas", id:1},
-        {title:'Titanic', director: "James Cameron", id:2},
-        {title:'Charles Angel', director: "McG", id:3}
-
-    ])
-    const delMe = (id)=>{
-        const newMov = movie.filter((mov)=>mov.id !== id)
-        setMovie(newMov);
-    /*const handleSelect = ()=> {
-        setMyname('Codix');
-   
-    } */
-
-    }
     return(
-    <div className='content'> 
-        <h1>
-           Main Page
-        </h1>
-         <p>'hello' {myName}</p>
-         <p> {movie.map((movies)=>(
-            <div className='styleNatin' >
-            <p>Movie name: {movies.title};</p>
-            <p>Movie Director: {movies.director}</p>
-
-            <button onClick={()=>delMe(movies.id)}>Delete</button>
-            </div>
-            
-         )
-
-         )}</p>
         
-         <div>
+         <>
+            <h1>Main Page</h1>
+        <div className='divOne'>
+            <h2> Division 1</h2>
             <SubMainPage/>
-         </div>
-    </div> );
-    // <button onClick={handleSelect}>press</button>
+        </div> 
+        <div className='divTwo'>
+            <h2> Division 2</h2>
+            <DivisionTwo/>
+        </div>
+        <div className='divOne'>
+            <h2> Division 3</h2>
+            <DivisionThree/>
+        </div>
+        <div>
+            <DivisionFour/>
+        </div>
+        <div>
+            <DivisionFive/>
+        </div>
+        <div>
+            <Divisionsix/>
+        </div>
+        <div>
+            <DivisionSeven/>
+        </div>
+        <div>
+            <DivisionEigth/>
+        </div>
+        <div>
+            <DivisionNine/>
+        </div>
+         </>
+         
+    )
 }
 
 export default MainPages;

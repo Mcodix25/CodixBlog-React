@@ -7,6 +7,10 @@ const PageTwo = () => {
         {title: 'title2', body:'body2', author:'author2' ,id:2},
         {title: 'title3', body:'body3', author:'author3' ,id:3}
     ])
+    const deltMe = (id)=>{
+      const newBlogs= blogs.filter((bloge)=>bloge.id !== id)
+      setBlog(newBlogs);
+    }
     
     return ( 
         <div className="content">
@@ -17,6 +21,7 @@ const PageTwo = () => {
                     <h2>{blogi.title}</h2>
                     <p>Written by {blogi.author}</p>
                     <p>{blogi.body}</p>
+                    <button onClick={()=>deltMe(blogi.id)}>delTwo</button>
 
                 </div>
             )

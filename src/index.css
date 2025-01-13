@@ -57,3 +57,17 @@
   border-width:1px ;
 }
 
+.divOne{
+  padding:5px 10px;
+  margin: 3px 3px;
+  background-color: aqua;
+  box-shadow: #333;
+}
+
+.divTwo{
+  padding:5px 10px;
+  margin: 3px 3px;
+  background-color:bisque;
+  box-shadow: #333;
+}
+

@@ -1,16 +1,16 @@
 
 import PageTwo from './PageTwo';
-import PageOne from './PageOne';
+
 import Headline from './Headline';
 import Navbar from './Navbar';
 import Home from './home';
 import PageThree from './PageThree';
 import PageFour from './PageFour';
 import Pagefive from './PageFive';
-import PageNine from './PageNine';
+
 import PageTen from './PageTen';
 //import Bloglist from './Blog-list';
-import MainPages from './MainPage';
+import MainPage from './MainPage';
 //import './index.css';
 
 function App(){
@@ -28,7 +28,7 @@ function App(){
       </div>
       <div>
       
-      <PageOne/><br/>
+    
       <PageTwo/>
        <div className="content">
         <PageThree/>
@@ -36,12 +36,9 @@ function App(){
         <PageFour/>
         <br/>
         <Pagefive/>
-        <br/>
-        <PageNine/>
-        <br/>
         <PageTen/>
         <br/>
-        <MainPages/>
+        <MainPage/>
       
 
        </div>
