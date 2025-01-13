@@ -1,7 +1,7 @@
 const Navbar = () => {
     return ( 
         <nav className = "navbar">
-            <h1> Mc Rod Blog</h1>
+            <h1> Codix Blog2</h1>
             <div className=" links">
                 <a href="/"> home</a>
                 <a href="/create" style={{

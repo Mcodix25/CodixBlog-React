@@ -1,33 +1,43 @@
 import { useState } from "react";
+import Bloglist from "./Blog-list";
+
 const Home = () => {
-    const [click1,setClick1] = useState('click1');
-    const [click2,setClick2] = useState ('click2');
-    const[click3,setClick3] = useState ('click3');
+  
 
-    const handleClicky = () =>{
-        setClick1 ('Click1 was done');}
+    const [blogs,setBlogs] = useState([
+        {
+            title: "My first Blog",
+            body: " first body that caan be use as sample",
+            Author: "Aron",
+            id: 1
+        },
+        {
+            title: "My second Blog",
+            body: " second body that caan be use as sample",
+            Author: "Bernard",
+            id: 2},
+        {
+    
+            title: "My 3rd Blog",
+            body: " 3rd body that caan be use as sample",
+            Author: "Cardo",
+            id: 3
+        }  
+    ])
      
-    
-    const handleClick2 = () =>{
-        setClick2 ('click2 was done');
-    }
+    const handleDelete = (id)=>{
+        const newBlog = blogs.filter((blogsf)=>blogsf.id !==id)
+        console.log('check handleclick');
+        setBlogs(newBlog);
 
-    const handleClick3 = ()=>{
-        setClick3("reset 3");
-    }
+    } 
     
-   
     return ( 
         <div className="Home">
-          <h2>Home page</h2>
-          <p>{click1}</p>
-          <button onClick={handleClicky}>B1</button>
-
-          <p>{click2}</p>
-          <button onClick={handleClick2}>B2</button>
+            
+       <Bloglist handleDelete={handleDelete} blogs={blogs} title="All blogs!"/>
+       
           
-          <p>{click3}</p>
-          <button onClick={handleClick3}>B3</button>
         </div>
         
      );}

@@ -1,0 +1,26 @@
+{
+    "Blogs":[
+    
+        {
+            "title": "My first Blog",
+            "body": " first body that caan be use as sample",
+            "Author1": "Aron",
+            "id": 1
+        },
+        {
+            "title": "My second Blog",
+            "body": " second body that caan be use as sample",
+            "Author1": "Bernard",
+            "id": 2},
+        {
+    
+            "title": "My 3rd Blog",
+            "body": " 3rd body that caan be use as sample",
+            "Author1": "Cardo",
+            "id": 3
+        }
+    ]
+    
+    
+    
+    }
