@@ -1,10 +1,11 @@
 //import { useState } from "react";
 
-const Bloglist = ({handleDelete,blogs}) => {
+const Bloglist = ({handleDelete,blogs,title}) => {
   
     
     return ( 
-       <div class='blog-list'>
+       <div className='blog-list'>
+        <h2>{title}</h2>
         {blogs.map((blogsm)=>(
             <div className="blog-preview" key={blogsm.id}>
                 <h1>{blogsm.title}</h1>

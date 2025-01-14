@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Bloglist from "./Blog-list";
 
 const Home = () => {
@@ -24,18 +24,25 @@ const Home = () => {
             id: 3
         }  
     ])
+    
      
     const handleDelete = (id)=>{
         const newBlog = blogs.filter((blogsf)=>blogsf.id !==id)
-        console.log('check handleclick');
         setBlogs(newBlog);
 
     } 
+    useEffect(()=>{
+        console.log('use effect running');
+       
+    },[]);
     
     return ( 
         <div className="Home">
             
        <Bloglist handleDelete={handleDelete} blogs={blogs} title="All blogs!"/>
+       
+       <p>{name}</p>
+       
        
           
         </div>
