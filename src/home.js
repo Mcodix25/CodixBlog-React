@@ -21,9 +21,10 @@ const Home = () => {
             })
             .then (data=>{  
                setBlogs(data);
+               setPending(false);
               
             })
-        },3000);
+        },1000);
        
     },[]);
     
