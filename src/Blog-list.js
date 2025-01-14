@@ -8,7 +8,7 @@ const Bloglist = ({handleDelete,blogs,title}) => {
         <h2>{title}</h2>
         {blogs.map((blogsm)=>(
             <div className="blog-preview" key={blogsm.id}>
-                <h1>{blogsm.title}</h1>
+                <h1>{blogsm.titled}</h1>
                 <p>{blogsm.body}</p>
                 <p>{blogsm.Author}</p>
                 <button onClick={()=>handleDelete(blogsm.id)}>Delete</button>
