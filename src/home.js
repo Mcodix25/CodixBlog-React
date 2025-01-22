@@ -1,5 +1,6 @@
 //import { useEffect, useState } from "react";
 import Bloglist from "./Blog-list";
+//import NewPage from "./NewPage";
 import useFetch from "./useFetch";
 
 const Home = () => {
@@ -10,15 +11,14 @@ const Home = () => {
     /*const handleDelete = (id)=>{
         const newBlog = blogs.filter((blogsf)=>blogsf.id !==id)
         setData(newBlog); } */
-
-    
   
-    
     return ( 
         <div className="Home">
         {error && <div> {error}</div>}
         {pending && <div> Loading....</div>}
        {blogs && <Bloglist /* handleDelete={handleDelete} */blogs={blogs} title="All blogs!"/> }
+       <br/>
+     
           
         </div>
         

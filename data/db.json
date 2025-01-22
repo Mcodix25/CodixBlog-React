@@ -1,26 +1,22 @@
 {
-    "blogs":[
-    
-        {
-            "titled": "My first Blog",
-            "body": " first body that caan be use as sample",
-            "Author1": "Aron",
-            "id": 1
-        },
-        {
-            "titled": "My second Blog",
-            "body": " second body that caan be use as sample",
-            "Author1": "Bernard",
-            "id": 2},
-        {
-    
-            "titled": "My 3rd Blog",
-            "body": " 3rd body that caan be use as sample",
-            "Author1": "Cardo",
-            "id": 3
-        }
-    ]
-    
-    
-    
+  "blogs": [
+    {
+      "titled": "My first Blogi",
+      "body": " first body that can be used as sample, When we take on too many burdon, sometimes things are not practically possible, we waste time, energy, and money and distract yourself from whats really important.",
+      "Author": "Aron",
+      "id": "1"
+    },
+    {
+      "titled": "My second Blog",
+      "body": " second body that can be used as sample, My aim for this blog is to reach millions of people to inspire and to hopefully help them see the beauty around us, no matter where they are. I know it sounds ambitious but who knows we can make it, as the universe is with us. I know we all need love, kindness, inspiration, and positivity, and that makes the world a better place.",
+      "Author": "Bernard",
+      "id": "23123"
+    },
+    {
+      "id": "185d",
+      "title": "4th blog",
+      "body": "thiis is fourt blog",
+      "author": "Bernard"
     }
+  ]
+}

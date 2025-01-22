@@ -9,12 +9,12 @@ const useFetch=((url)=>{
     const[error,setError]=useState(null);
 
     useEffect(()=>{
-      //  const abortCont= new AbortController();
+       const abortCont= new AbortController();////////abort controller
         setTimeout(()=>{
-            fetch(url/*,{signal:abortCont.signal} */)
+            fetch(url,{signal:abortCont.signal} ) /////////
             .then(res=>{
                 if(!res.ok){
-                    throw new Error("Cant find ur request, error");   
+                    throw new Error("Cant find ur request, error!");   
                 }
             
                return res.json();
@@ -25,12 +25,18 @@ const useFetch=((url)=>{
                setError(null);
             })
             .catch(err=>{
-                setPending(false)
-                setError(err.message)
+                if(err.name === 'AbortError') {
+                    console.log ('fetch aborted')
+                }
+                else{
+                    setPending(false)
+                    setError(err.message)
+                }     
+                
             })
         },1000);
 
-       // return ()=>console.log (" clean up")
+       return ()=>abortCont.abort();////////
        
     },[url]);
 
